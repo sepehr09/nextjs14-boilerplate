@@ -1,3 +1,5 @@
+# Nextjs13-boilerplate
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -31,8 +33,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## appDir directory
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+we have enabled experimental feature (appDir) in next.config.js.
+Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tools we used in this project
+
+- [Next.js](https://nextjs.org/) to build the app
+- [typescript](https://www.typescriptlang.org/) to write code
+- [tailwindcss](https://tailwindcss.com/) to style
+- [eslint](https://eslint.org/) to lint code
+- [pretter](https://prettier.io/) to format code
+- [husky](https://typicode.github.io/husky/#/) to run git hooks
+- [commitlint](https://commitlint.js.org/#/) to lint commit message
+- [validate-branch-name](https://www.npmjs.com/package/validate-branch-name) to validate branch names
+
+## Commitlint
+
+we use [commitlint](https://commitlint.js.org/#/) to have a conventional commit messages. also we integrate that with `husky` to force all team members to follow the rules.
+so in order to make a commit message you must follow the rules described in [@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional).
