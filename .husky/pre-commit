@@ -3,31 +3,3 @@
 
 npx validate-branch-name
 npx lint-staged
-
-# Set the package manager to use
-if command -v yarn >/dev/null 2>&1; then
-  PM="yarn"
-else
-  PM="npm"
-fi
-
-# Type check
-if ! "$PM" run check-types; then
-  echo '❌ Type check Failed! ❌
-        Please make the required changes above and try to commit again.'
-  exit 1
-fi
-
-# Prettier check
-if ! "$PM" run prettier; then
-  echo '🌼 Prettier Check Failed! 🌼
-        Prettier Check Failed. Run yarn prettier:fix, make the required changes above, and try to commit again.'
-  exit 1
-fi
-
-# ESLint check
-if ! "$PM" run lint; then
-  echo '🏀 ESLint Check Failed! 🏀
-        ESLint Check Failed. Make the required changes listed above, and try to commit again.'
-  exit 1
-fi
