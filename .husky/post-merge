@@ -1,4 +1,15 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn
+# Set the package manager to use
+if command -v yarn >/dev/null 2>&1; then
+  PM="yarn"
+else
+  PM="npm"
+fi
+
+# Install dependencies
+if ! "$PM" install; then
+  echo "❌ Failed to install dependencies with $PM. Aborting post-merge hook."
+  exit 1
+fi
