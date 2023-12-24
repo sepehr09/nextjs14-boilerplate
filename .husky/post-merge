@@ -2,7 +2,9 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Set the package manager to use
-if command -v yarn >/dev/null 2>&1; then
+if command -v pnpm >/dev/null 2>&1; then
+  PM="pnpm"
+elif command -v yarn >/dev/null 2>&1; then
   PM="yarn"
 else
   PM="npm"
