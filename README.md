@@ -1,4 +1,4 @@
-# Nextjs13-boilerplate
+# Nextjs14-boilerplate
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -40,6 +40,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - [pretter](https://prettier.io/) to format code
 - [husky](https://typicode.github.io/husky/#/) to run git hooks
 - [commitlint](https://commitlint.js.org/#/) to lint commit message
+- [SVGR](https://www.npmjs.com/package/@svgr/webpack) to use svg as JSX components
+- [Storybook](https://storybook.js.org/) for documentation and component development
 - [validate-branch-name](https://www.npmjs.com/package/validate-branch-name) to validate branch names
 
 ## Commitlint
