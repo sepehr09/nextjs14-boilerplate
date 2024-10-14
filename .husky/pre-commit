@@ -1,5 +1,5 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
+echo "Validating branch name..."
 npx validate-branch-name
+
+echo "Running lint-staged..."
 npx lint-staged
