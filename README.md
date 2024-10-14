@@ -43,6 +43,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - [SVGR](https://www.npmjs.com/package/@svgr/webpack) to use svg as JSX components
 - [Storybook](https://storybook.js.org/) for documentation and component development
 - [validate-branch-name](https://www.npmjs.com/package/validate-branch-name) to validate branch names
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge) to merge tailwind classNames together
 
 ## Commitlint
 
