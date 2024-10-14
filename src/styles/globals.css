@@ -3,6 +3,12 @@
 @tailwind utilities;
 @import "colors.css";
 
+html {
+  /* scroll-behavior: smooth; */
+  /* for disable zoom on mobile (ios) */
+  /* touch-action: pan-y; */
+}
+
 body {
   color: rgb(var(--color-foreground));
   background: rgb(var(--color-background));
