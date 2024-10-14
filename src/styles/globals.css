@@ -1,27 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "colors.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  /* scroll-behavior: smooth; */
+  /* for disable zoom on mobile (ios) */
+  /* touch-action: pan-y; */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .ltr {
+    direction: ltr;
+  }
+  .rtl {
+    direction: rtl;
+  }
+  .dir-auto {
+    direction: auto;
+  }
+  .dir-inherit {
+    direction: inherit;
+  }
+  /* This adds extra bottom padding on ios mobile browsers */
+  .ios-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
